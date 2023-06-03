@@ -16,4 +16,6 @@ Key Features:
 
 + Industry-Relevant Optimization: AutoFolio stays up-to-date with the latest industry trends, keywords, and formatting guidelines to ensure your profile aligns with current expectations. This optimization maximizes your chances of getting noticed by employers and recruiters.
 
+<hr />
+
 <h3 align = "left"> "AutoFolio: Your Passport to Professional Success, Where AI Unleashes the Power of Your Profile." </h3>
