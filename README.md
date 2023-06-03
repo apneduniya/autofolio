@@ -1,4 +1,4 @@
-# Introducing AutoFolio: The Ultimate Profile Generator for Tech Enthusiasts!
+# Introducing AutoFolio: The Ultimate Portfolio Generator for Tech Enthusiasts!
 
 ![](img/index.png)
 
