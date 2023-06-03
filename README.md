@@ -15,3 +15,5 @@ Key Features:
 + Enhanced Personal Branding: With AutoFolio, you can create a powerful personal brand that accurately represents your professional identity. The generated profile presents you as a standout candidate or professional, helping you leave a lasting impression.
 
 + Industry-Relevant Optimization: AutoFolio stays up-to-date with the latest industry trends, keywords, and formatting guidelines to ensure your profile aligns with current expectations. This optimization maximizes your chances of getting noticed by employers and recruiters.
+
+<h3 align = "center"> "AutoFolio: Your Passport to Professional Success, Where AI Unleashes the Power of Your Profile." </h3>
