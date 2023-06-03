@@ -18,4 +18,4 @@ Key Features:
 
 <hr />
 
-<h3 align = "left"> "AutoFolio: Your Passport to Professional Success, Where AI Unleashes the Power of Your Profile." </h3>
+<h3 align = "center"> "AutoFolio: Your Passport to Professional Success, <br />Where AI Unleashes the Power of Your Profile." </h3>
