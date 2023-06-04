@@ -1,7 +1,9 @@
 const coverLetterDiv = document.getElementById("cover-letter-tab-pane");
 const resumeDiv = document.getElementById("resume-tab-pane");
+const websiteDiv = document.getElementById("website-tab-pane");
 coverLetterDiv.innerHTML = "Loading...";
 resumeDiv.innerHTML = "Loading...";
+websiteDiv.innerHTML = "Loading...";
 
 const name_ = sessionStorage.getItem("name");
 const contact = sessionStorage.getItem("contact");
@@ -46,7 +48,7 @@ Who are you: ${profession}
 The output will be a cover letter that highlights your skills, projects and fit for the position. You can customize the output by changing the company name, job title and other details as needed.
 `,
             temperature: 0,
-            max_tokens: 777,
+            max_tokens: 400,
             top_p: 1,
             frequency_penalty: 0,
             presence_penalty: 0,
@@ -104,10 +106,34 @@ The output will be a cover letter that highlights your skills, projects and fit 
 
         </div>
     </div>`
+    const website = `
+    <link rel="stylesheet" href="css/download.css" />
+    <div class="container d-flex justify-content-start align-items-center min-vh-100 flex-column ">
+
+    <div class="profile-pic mb-5 shadow"></div>
+
+    <!-- Put Inside a box -->
+    <div class="name-rect shadow bg-white rounded-5 p-5 align-items-center justify-content-center flex-column text-center border border">
+        <!-- Name -->
+        <h1 class="mb-3" style="font-weight: 700">${name}</h1>
+
+        <!-- Occupation -->
+        <h3>${profession}</h3>
+
+    </div>
+    <!-- Links --> <!-- TODO Link to website -->
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary btn-lg btn-block mb-5 mt-5 shadow" onclick="location.href = 'https://twitter.com/home';"> Twitter </button>
+        <button class="btn btn-primary btn-lg btn-block mb-5 shadow" onclick="location.href = 'https://linkedin.com';"> Linkedin </button>
+        <button class="btn btn-primary btn-lg btn-block mb-5 shadow " onclick="location.href = 'https://discord.com';"> Discord </button>
+        <button class="btn btn-primary btn-lg btn-block mb-5 shadow" onclick="location.href = 'https://github.com';"> Github </button>
+        <button class="btn btn-primary btn-lg btn-block mb-5 shadow" onclick="location.href = 'https://stackoverflow.com';"> Stack Overflow </button>
+    </div>`
+    websiteDiv.innerHTML = website;
     resumeDiv.innerHTML = resume;
 
 
     return coverReponse;
 };
 
-const coverLetterResponse_ =  getCoverLetter(name_, contact, skills, projects, experience, profession);
+const coverLetterResponse_ = getCoverLetter(name_, contact, skills, projects, experience, profession);

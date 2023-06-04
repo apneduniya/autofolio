@@ -1,131 +1,16 @@
 
-        body {
-            background-color: #E8C9EA;
-            margin: 0;
-            padding: 0;
-        }
+.profile-pic{
+    width: 20%;
+    padding-bottom: 20%;
 
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+    margin-top: 10%;
+    border-radius: 50%;
 
-        .left-box {
-            background-color: #F5E1F7;
-            padding: 20px;
-            border-radius: 10px;
-            flex: 1;
-            margin-right: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
+    background-color: white;
 
-        .left-box img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 10px;
-        }
 
-        .left-box h2 {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
+    background-image: url("/img/profile.png");
+    background-size:cover;
+    background-repeat: no-repeat;
 
-        .right-boxes {
-            background-color: #FDEEF2;
-            padding: 20px;
-            border-radius: 10px;
-            flex: 1;
-            margin-left: 10px;
-        }
-
-        h3 {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 0;
-        }
-
-        .results p {
-            margin: 5px 0;
-        }
-
-        .card {
-            margin-bottom: 20px;
-        }
-
-        .card-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .btn-lg {
-            font-size: 20px;
-            padding: 12px 20px;
-        }
-
-        @media (max-width: 767px) {
-            /* Styles for phones */
-            .container {
-                padding: 20px;
-                flex-direction: column;
-            }
-
-            .left-box,
-            .right-boxes {
-                padding: 15px;
-                margin: 0;
-                margin-bottom: 10px;
-            }
-
-            h2 {
-                font-size: 26px;
-                margin-bottom: 15px;
-            }
-
-            h3 {
-                font-size: 20px;
-            }
-
-            .btn-lg {
-                font-size: 18px;
-                padding: 10px 15px;
-            }
-        }
-
-        @media (min-width: 768px) and (max-width: 991px) {
-            /* Styles for tablets */
-            .container {
-                padding: 40px;
-                flex-direction: row;
-            }
-
-            .left-box,
-            .right-boxes {
-                margin: 0;
-                margin-right: 10px;
-                margin-bottom: 0;
-            }
-
-            h2 {
-                font-size: 28px;
-                margin-bottom: 15px;
-            }
-
-            h3 {
-                font-size: 22px;
-            }
-
-            .btn-lg {
-                font-size: 18px;
-                padding: 10px 15px;
-            }
-        }
-
+}
