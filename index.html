@@ -22,7 +22,6 @@
 </head>
 
 <body>
-    <!-- justify-content-center (center horizontal) & align-items-center (center vertical)-->
 
     <!-- Main Container -->
     <div class="container d-flex justify-content-center align-items-center min-vh-100">
@@ -30,64 +29,61 @@
 
         <!-- Middle Box Container -->
         <div class="row w-100 border rounded-5 p-2 bg-white shadow middle-box">
+
             <!-- Left side of middle container -->
             <div class="col-md-6 p-5 d-flex flex-column justify-content-start align-items-start middle-left-box">
                 <h2 class="mb-4 logo">Autofolio</h2>
-                <div style="
-              height: 100%;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-            ">
-                    <h1 style="font-weight: 700">
-                        Revolutionize your profile-building experience
-                    </h1>
+
+                <!-- Centered Text -->
+                <div style="height: 100%; display: flex; flex-direction: column; justify-content: center; ">
+
+                    <h1 style="font-weight: 700"> Revolutionize your profile-building experience </h1>
                     <p>
                         Unleash your true tech potential with Autofolio: the ultimate
                         solution for showcasing your skills, experiences, and achievements
                         in a world shaped by technology.
                     </p>
-                    <!-- TODO Link button -->
-                    <button class="btn btn-primary align-self-start" style="margin-top: 10px" type="submit"
-                        onclick="focusName(event)">
-                        Begin Now
-                    </button>
+                    <button class="btn btn-primary align-self-start" style="margin-top: 10px" type="submit" onclick="focusName(event)"> Begin Now </button>
+
                 </div>
+
             </div>
 
             <!-- Right side of middle container -->
-            <div
-                class="col-md-6 d-flex flex-column justify-content-end align-items-start border rounded-5 p-4 middle-right-box">
-                <form onsubmit="generatePortfolio(event)" style="width: 100%">
-                    <!-- TODO Link Input -->
+            <div class="col-md-6 d-flex flex-column justify-content-end align-items-start border rounded-5 p-4 middle-right-box">
+
+                <!-- User Form (generates a portfolio when submitted and goes into another site)-->
+                <form onsubmit="generatePortfolio(event)" style="width: 100%" action="download.html">
+
+                    <!-- Name Input -->
                     <input type="text" class="form-control" id="name" placeholder="Your Name" required />
-                    <div style="
-                display: flex;
-                justify-content: space-between;
-                width: 100%;
-                gap: 26px;
-              ">
-                        <input type="text" class="form-control" style="margin-top: 10px" id="skills"
-                            placeholder="Skills" required />
-                        <input type="text" class="form-control" style="margin-top: 10px" id="projects"
-                            placeholder="Projects" required />
+
+                    <div style="display: flex; justify-content: space-between; width: 100%; gap: 26px; ">
+                        
+                        <!-- Skills Input -->
+                        <input type="text" class="form-control" style="margin-top: 10px" id="skills" placeholder="Skills" required />
+
+                        <!-- Projects Input -->
+                        <input type="text" class="form-control" style="margin-top: 10px" id="projects" placeholder="Projects" required />
+
                     </div>
-                    <div style="
-                display: flex;
-                justify-content: space-between;
-                width: 100%;
-                gap: 26px;
-              ">
-                        <input type="number" class="form-control" style="margin-top: 10px" id="experience"
-                            placeholder="Years of experience" required />
-                        <input type="text" class="form-control" style="margin-top: 10px" id="profession"
-                            placeholder="Who are you?" required />
+
+                    <div style=" display: flex; justify-content: space-between; width: 100%;  gap: 26px; ">
+
+                        <!-- Years of Experience Input -->
+                        <input type="number" class="form-control" style="margin-top: 10px" id="experience" placeholder="Years of experience" required />
+
+                        <!-- Profession Input -->
+                        <input type="text" class="form-control" style="margin-top: 10px" id="profession" placeholder="Profession" required />
                     </div>
-                    <button class="btn btn-primary align-self-start" style="margin-top: 20px; width: 100%"
-                        type="submit">
+
+                    <!-- Start Button -->
+                    <button class="btn btn-primary align-self-start" style="margin-top: 20px; width: 100%" type="submit">
                         Generate
                     </button>
+
                 </form>
+
             </div>
         </div>
     </div>
@@ -101,6 +97,7 @@
 
             // Set the focus on the input element
             inputElement.focus();
+
         };
     </script>
 
