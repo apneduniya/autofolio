@@ -33,7 +33,7 @@ const getCoverLetter = async (
         headers: {
             "Content-Type": "application/json",
             Authorization:
-                "Bearer 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",
+                "Bearer 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",
         },
         body: JSON.stringify({
             model: "text-davinci-003",
