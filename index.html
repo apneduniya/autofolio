@@ -60,24 +60,17 @@
                 class="col-md-6 d-flex flex-column justify-content-end align-items-start border rounded-5 p-4 middle-right-box">
                 <form onsubmit="generatePortfolio(event)" style="width: 100%">
                     <!-- TODO Link Input -->
-                    <input type="text" class="form-control" id="name" placeholder="Your Name" required />
-                    <div style="
-                display: flex;
-                justify-content: space-between;
-                width: 100%;
-                gap: 26px;
-              ">
+                    <div class="input-container">
+                        <input type="text" class="form-control" id="name" placeholder="Your Name" required />
+                        <input type="text" class="form-control" id="contact" placeholder="Contact" required />
+                    </div>
+                    <div class="input-container">
                         <input type="text" class="form-control" style="margin-top: 10px" id="skills"
                             placeholder="Skills" required />
                         <input type="text" class="form-control" style="margin-top: 10px" id="projects"
                             placeholder="Projects" required />
                     </div>
-                    <div style="
-                display: flex;
-                justify-content: space-between;
-                width: 100%;
-                gap: 26px;
-              ">
+                    <div class="input-container">
                         <input type="number" class="form-control" style="margin-top: 10px" id="experience"
                             placeholder="Years of experience" required />
                         <input type="text" class="form-control" style="margin-top: 10px" id="profession"
@@ -97,10 +90,34 @@
     <script>
         const focusName = (event) => {
             // Get the input element by its ID
-            var inputElement = document.getElementById("name");
+            const inputElement = document.getElementById("name");
 
             // Set the focus on the input element
             inputElement.focus();
+        };
+
+
+        const generatePortfolio = (event) => {
+
+            event.preventDefault();
+
+            const name_ = document.getElementById("name").value;
+            const contact = document.getElementById("contact").value;
+            const skills = document.getElementById("skills").value;
+            const projects = document.getElementById("projects").value;
+            const experience = document.getElementById("experience").value;
+            const profession = document.getElementById("profession").value;
+
+            // Store form data in sessionStorage
+            sessionStorage.setItem("name", name_);
+            sessionStorage.setItem("contact", contact);
+            sessionStorage.setItem("skills", skills);
+            sessionStorage.setItem("projects", projects);
+            sessionStorage.setItem("experience", experience);
+            sessionStorage.setItem("profession", profession);
+
+            // Redirect to the next HTML page
+            window.location.href = "/generate.html";
         };
     </script>
 

@@ -1,4 +1,4 @@
-:root{
+:root {
     --bs-body-font-family: 'Montserrat', sans-serif;
 
 }
@@ -9,8 +9,24 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     /*background-color: #437B94;*/
-    
+
     height: 100%;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 26px;
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .input-container {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 .logo {
@@ -19,29 +35,29 @@ body {
     user-select: none;
 }
 
-.middle-box{
-    
+.middle-box {
+
     /* TODO Change width and height to be different depending on screen size */
     min-height: 700px;
 
 
     border: 1px solid black;
-    
+
 
 }
 
-.middle-left-box{
-    
+.middle-left-box {
+
     color: black;
 
 }
 
-.middle-right-box{
+.middle-right-box {
 
     color: black;
-    background-image:url("../img/right-bg.png");
+    background-image: url("../img/right-bg.png");
     background-size: cover;
     background-color: white;
-    
+
 
 }
